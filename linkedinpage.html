@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+        <!-- HTML -->
+<div class="h-screen flex flex-col">
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 ">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 lg:ps-16 ps-4">
+        <span class="font-semibold text-4xl">Linked</span><span class="text-2xl bg-sky-700 ms-1 rounded p-1">in</span>
+      </div>
+      <div class="block lg:hidden">
+        <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id="menu" class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:justify-end   lg:pr-16 pr-4">
+        <ul class="flex ps-4 pt-4 justify-between lg:justify-end">
+          <li>
+            <a class="inline-block text-gray-200 pe-6 hover:text-white text-2xl ">Sign In</a>
+          </li>
+          <li>
+          <a href="#" class="inline-block text-xl lg:text-sm px-4 py-2  leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white lg:mt-0">JOIN NOW</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Rest of the page content -->
+    <div class="grid items-center mainDiv">
+      <div class="center md:grid  grid-cols-12 ">
+        <div class="lg:col-start-5 md:col-start-4 md:col-end-10 col-end-9 bg-white bg-opacity-70  px-3 py-5 ">
+          <div class=" px-16">
+            <img src="logo.png" class="center-img w-full"/>
+          </div>
+          <div class=" mt-4 px-2">
+            <input type="text" class="h-10 w-full border px-2 text-xl " placeholder="Email or Phone Number"/>
+          </div>
+          <div class=" mt-4 px-2">
+            <input type="text" class="h-10 w-full border px-2 text-xl " placeholder="Password"/>
+          </div>
+          <div class=" mt-4 px-2">
+            <input type="submit" class="h-10 w-full border border-sky-600 px-2 text-xl bg-sky-600" value="Submit"/>
+          </div>
+          <div class="row-span-1 mt-4 text-center">
+              <span class="text-sky-600 text-lg">Forgot Password?</span>
+              <div class="text-lg">Not a member? <span class="text-sky-600">Join Now</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="mt-auto  w-full flex flex-col md:flex-row justify-evenly py-4 bg-gray-900 text-white px-3 ">
+        <span>LinkedIn</span>
+        <span>User Agreement</span>
+        <span>Privacy Policy</span>
+        <span>Community Guidelines</span>
+        <span>Cookie Policy</span>
+        <span>Copyright Policy</span>
+        <span>Unsubscribe</span>
+      </div>
+    
+  </div>
+     <!-- JavaScript -->
+  <script>
+    // Get the elements
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+  
+    // Add event listener to toggle the menu
+    menuToggle.addEventListener("click", function() {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

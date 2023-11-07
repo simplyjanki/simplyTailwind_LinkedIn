@@ -1,0 +1,8 @@
+body{
+    background:url("a.jpg") no-repeat fixed;
+    background-size: cover;
+}
+.mainDiv{
+    min-height: 100vh;
+    
+}
